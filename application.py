@@ -40,7 +40,7 @@ def predict_datapoint():
         result=xgb_model.predict(new_data_scaled)[0]
 
     
-        return render_template('home.html', result=result)
+        return render_template('home.html', result=round(result,2))
     
     
     else:
